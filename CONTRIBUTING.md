@@ -112,3 +112,5 @@ See [Creating a pull request](https://docs.github.com/en/github/collaborating-wi
 ```console
 $ make deploy
 ```
+
+*Notes: this will be automatically run by GitHub Action when pushing to the `latest` branch.*
