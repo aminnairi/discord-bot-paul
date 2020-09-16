@@ -1,12 +1,12 @@
-# discord-bot-paul
+# :robot: discord-bot-paul
 
 A Discord bot to handle polls.
 
 ![Paul le bot](https://i.ibb.co/jGvnmK7/paul-le-bot.png)
 
-## Usage
+## :thinking: Usage
 
-### Help
+### :sob: Help
 
 > *This will bring the help for those who are unknown to the bot's commands.*
 
@@ -14,7 +14,7 @@ A Discord bot to handle polls.
 paul --help
 ```
 
-### Poll
+### :chart_with_upwards_trend: Poll
 
 > *This will delete the command and send a poll as en embed message. If the `--question` or `--answer` arguments are missing, it won't output anything.*
 
@@ -24,7 +24,7 @@ paul --question What do you wanna eat --answer Indian --answer Mexican --answer 
 
 *Notes: if there are many "I don't know" answers, it's a trap! Do retreat and throw chocolate at regular interval.*
 
-### Version
+### :nerd_face: Version
 
 > *This will display the current version of the bot.*
 
@@ -32,10 +32,10 @@ paul --question What do you wanna eat --answer Indian --answer Mexican --answer 
 paul --version
 ```
 
-## Contributing
+## :pray: Contributing
 
 See [`CONTRIBUTING.md`](./CONTRIBUTING.md).
 
-## License
+## :page_with_curl: License
 
 See [`LICENSE`](./LICENSE).
