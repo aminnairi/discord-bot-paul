@@ -8,7 +8,7 @@ A Discord bot to handle polls.
 
 ### Help
 
-*This will bring the help for those who are unknown to the bot's commands.*
+> *This will bring the help for those who are unknown to the bot's commands.*
 
 ```console
 paul --help
@@ -16,7 +16,7 @@ paul --help
 
 ### Poll
 
-*This will delete the command and send a poll as en embed message. If the `--question` or `--answer` arguments are missing, it won't output anything.*
+> *This will delete the command and send a poll as en embed message. If the `--question` or `--answer` arguments are missing, it won't output anything.*
 
 ```console
 paul --question What do you wanna eat --answer Indian --answer Mexican --answer Chinese --answer I don't know
@@ -26,7 +26,7 @@ paul --question What do you wanna eat --answer Indian --answer Mexican --answer 
 
 ### Version
 
-*This will display the current version of the bot.*
+> *This will display the current version of the bot.*
 
 ```console
 paul --version
