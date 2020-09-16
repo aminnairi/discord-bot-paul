@@ -4,3 +4,4 @@
 /.yarnrc
 /yarn.lock
 /.local
+/.config
