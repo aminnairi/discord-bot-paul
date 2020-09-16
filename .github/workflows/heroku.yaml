@@ -8,7 +8,7 @@ name: Heroku Deployment
 on:
     push:
         branches:
-            - next
+            - latest
 
 jobs:
     heroku:
