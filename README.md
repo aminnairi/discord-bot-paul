@@ -24,6 +24,14 @@ paul --question What do you wanna eat --answer Indian --answer --answer Mexican 
 
 *Notes: if there are many "I don't know" answers, it's a trap! Do retreat and throw chocolate at regular interval.*
 
+### Version
+
+*This will display the current version of the bot.*
+
+```console
+paul --version
+```
+
 ## Development
 
 ### Requirements
