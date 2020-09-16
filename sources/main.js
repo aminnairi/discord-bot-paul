@@ -20,16 +20,20 @@ client.on("ready", () => {
 client.on("message", message => {
     const content = message.content;
 
-    if (content === "poll --version") {
+    if (content === "paul --version") {
         return message
             .channel
             .send(createEmbed("Version", `v${pkg.version}\n\n[Official documentation](https://github.com/aminnairi/discord-bot-paul#readme)`));
     }
 
-    if (content === "poll --help") {
+    if (content === "paul --help") {
         return message
             .channel
             .send(createEmbed("Help", "[Official documentation](https://github.com/aminnairi/discord-bot-paul#readme)"));
+    }
+
+    if (!content.startsWith("paul")) {
+        return;
     }
 
     const question = getQuestion(content); 
