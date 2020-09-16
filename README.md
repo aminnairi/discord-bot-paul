@@ -2,6 +2,8 @@
 
 A Discord bot to handle polls.
 
+[![GitHub license](https://img.shields.io/github/license/aminnairi/discord-bot-paul)](https://github.com/aminnairi/discord-bot-paul/blob/next/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/aminnairi/discord-bot-paul)](https://github.com/aminnairi/discord-bot-paul/issues) [![GitHub forks](https://img.shields.io/github/forks/aminnairi/discord-bot-paul)](https://github.com/aminnairi/discord-bot-paul/network) [![GitHub stars](https://img.shields.io/github/stars/aminnairi/discord-bot-paul)](https://github.com/aminnairi/discord-bot-paul/stargazers)
+
 ![Paul le bot](https://i.ibb.co/jGvnmK7/paul-le-bot.png)
 
 ## :thinking: Usage
