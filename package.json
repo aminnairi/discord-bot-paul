@@ -4,7 +4,7 @@
     "version": "0.1.0",
     "license": "MIT",
     "scripts": {
-        "start": "node sources/main.js"
+        "start": "node sources/main.mjs"
     },
     "dependencies": {
         "discord.js": "^12.3.1"
