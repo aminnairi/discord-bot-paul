@@ -41,3 +41,7 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md).
 ## :page_with_curl: License
 
 See [`LICENSE`](./LICENSE).
+
+## :pencil2: Changelog
+
+See [`CHANGELOG.md`](./CHANGELOG.md).
