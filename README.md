@@ -32,63 +32,10 @@ paul --question What do you wanna eat --answer Indian --answer --answer Mexican 
 paul --version
 ```
 
-## Development
+## Contributing
 
-### Requirements
+See [`CONTRIBUTING.md`](./CONTRIBUTING.md).
 
-- [Git](https://git-scm.com/)
-- [Docker](https://www.docker.com/)
-- [Docker Compose](https://docs.docker.com/compose/)
-- [GNU/Make](https://docs.docker.com/compose/)
+## License
 
-### Installation
-
-*This will install the repository locally.*
-
-```console
-$ git clone https://github.com/aminnairi/discord-bot-paul.git ~/github.com/aminnairi/discord-bot-paul
-$ cd ~/github.com/aminnairi/discord/bot-paul
-```
-
-### Configuration
-
-*This will configure the environment context.*
-
-```console
-$ cp .env.example .env
-$ $EDITOR .env
-```
-
-*Notes: Where `$EDITOR` is the command for opening your text editor.*
-
-### Start
-
-*This will run the [`sources/main.js`](./sources/main.js) script and thus awake the Bot.*
-
-```console
-$ make start
-```
-
-### Build
-
-This will build the Docker image defined in [`Dockerfile`](./Dockerfile).
-
-```console
-$ make build
-```
-
-### Run
-
-*This will run the built Docker image.*
-
-```console
-$ make run
-```
-
-### Deploy
-
-*This will build the Docker image defined in [`Dockerfile`](./Dockerfile) and push the image to a Heroku app.*
-
-```console
-$ make deploy
-```
+See [`LICENSE`](./LICENSE).
