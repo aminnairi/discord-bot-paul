@@ -8,13 +8,13 @@ A Discord bot to handle polls.
 
 ## Summary
 
-- [Usage](thinking-usage)
-    - [Help](sob-help)
-    - [Poll](chart_with_upwards_trend-poll)
-    - [Version](nerd_face-version)
-- [Contributing](pray-contributing)
-- [License](page_with_curl-license)
-- [Changelog](pencil2-changelog)
+- [Usage](#thinking-usage)
+    - [Help](#sob-help)
+    - [Poll](#chart_with_upwards_trend-poll)
+    - [Version](#nerd_face-version)
+- [Contributing](#pray-contributing)
+- [License](#page_with_curl-license)
+- [Changelog](#pencil2-changelog)
 
 ## :thinking: Usage
 
