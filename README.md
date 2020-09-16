@@ -6,7 +6,19 @@ A Discord bot to handle polls.
 
 ![Paul le bot](https://i.ibb.co/jGvnmK7/paul-le-bot.png)
 
+## Summary
+
+- [:thinking: Usage](thinking-usage)
+    - [:sob: Help](sob-help)
+    - [:chart_with_upwards_trend: Poll](chart_with_upwards_trend-poll)
+    - [:nerd_face: Version](nerd_face-version)
+- [:pray: Contributing](pray-contributing)
+- [:page_with_curl: License](page_with_curl-license)
+- [:pencil2: Changelog](pencil2-changelog)
+
 ## :thinking: Usage
+
+[:arrow_up: Back to summary](#summary)
 
 ### :sob: Help
 
@@ -15,6 +27,8 @@ A Discord bot to handle polls.
 ```console
 paul --help
 ```
+
+[:arrow_up: Back to summary](#summary)
 
 ### :chart_with_upwards_trend: Poll
 
@@ -26,6 +40,8 @@ paul --question What do you wanna eat --answer Indian --answer Mexican --answer 
 
 *Notes: if there are many "I don't know" answers, it's a trap! Do retreat and throw chocolate at regular interval.*
 
+[:arrow_up: Back to summary](#summary)
+
 ### :nerd_face: Version
 
 > *This will display the current version of the bot.*
@@ -34,14 +50,22 @@ paul --question What do you wanna eat --answer Indian --answer Mexican --answer 
 paul --version
 ```
 
+[:arrow_up: Back to summary](#summary)
+
 ## :pray: Contributing
 
 See [`CONTRIBUTING.md`](./CONTRIBUTING.md).
+
+[:arrow_up: Back to summary](#summary)
 
 ## :page_with_curl: License
 
 See [`LICENSE`](./LICENSE).
 
+[:arrow_up: Back to summary](#summary)
+
 ## :pencil2: Changelog
 
 See [`CHANGELOG.md`](./CHANGELOG.md).
+
+[:arrow_up: Back to summary](#summary)
