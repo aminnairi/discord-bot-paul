@@ -6,7 +6,7 @@ A Discord bot to handle polls.
 
 ![Paul le bot](https://i.ibb.co/jGvnmK7/paul-le-bot.png)
 
-## Summary
+## :checkered_flag: Summary
 
 - [Usage](#thinking-usage)
     - [Help](#sob-help)
