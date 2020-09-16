@@ -43,7 +43,7 @@ See [Fork a repo](https://support.discord.com/hc/en-us/articles/204849977-How-do
 
 ```console
 $ git clone https://github.com/$USER/discord-bot-paul.git ~/github.com/$USER/discord-bot-paul
-$ cd ~/github.com/aminnairi/discord-bot-paul
+$ cd ~/github.com/$USER/discord-bot-paul
 ```
 
 *Where `$USER` is your GitHub's user name.*
