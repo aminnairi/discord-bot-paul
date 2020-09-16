@@ -7,7 +7,7 @@
 
 "use strict";
 
-module.exports.getQuestion = function getQuestion(string) {
+export function getQuestion(string) {
     const parts = string.split(" ");
     const length = parts.length;
 
@@ -35,9 +35,9 @@ module.exports.getQuestion = function getQuestion(string) {
     }
 
     return question;
-};
+}
 
-module.exports.getAnswers = function getAnswers(string) {
+export function getAnswers(string) {
     const parts = string.split(" ");
     const length = parts.length;
     const answers = [];

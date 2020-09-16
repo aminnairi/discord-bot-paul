@@ -7,11 +7,11 @@
 
 "use strict";
 
-const Discord = require("discord.js");
-const {getQuestion, getAnswers} = require("./poll.js");
-const {createEmbed} = require("./embed.js");
+import Discord from "discord.js";
+import {getQuestion, getAnswers} from "./poll.mjs";
+import {createEmbed} from "./embed.mjs";
+
 const client = new Discord.Client();
-const pkg = require("../package.json");
 
 client.on("ready", () => {
     console.log("Bot is logged.");
@@ -23,7 +23,7 @@ client.on("message", message => {
     if (content === "paul --version") {
         return message
             .channel
-            .send(createEmbed("Version", `v${pkg.version}\n\n[Official documentation](https://github.com/aminnairi/discord-bot-paul#readme)`));
+            .send(createEmbed("Version", `v0.1.0\n\n[Official documentation](https://github.com/aminnairi/discord-bot-paul#readme)`));
     }
 
     if (content === "paul --help") {
