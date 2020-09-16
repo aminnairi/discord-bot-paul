@@ -5,8 +5,14 @@
 
 .PHONY: deploy start
 
+DOCKER_COMPOSE_RUN_OPTIONS=--rm
+
+ifeq (${CI},true)
+	DOCKER_COMPOSE_RUN_OPTIONS=--rm --user root -T
+endif
+
 start:
-	docker-compose run --rm yarn start
+	docker-compose run $(DOCKER_COMPOSE_RUN_OPTIONS) yarn start
 
 deploy:
-	docker-compose run --rm heroku sh -c 'docker build --build-arg DISCORD_BOT_TOKEN=$$DISCORD_BOT_TOKEN -t discord-bot-paul . && heroku container:login && heroku container:push --app discord-bot-paul discord-bot-paul && heroku container:release --app discord-bot-paul discord-bot-paul'
+	docker-compose run $(DOCKER_COMPOSE_RUN_OPTIONS) heroku sh -c 'docker build --build-arg DISCORD_BOT_TOKEN=$$DISCORD_BOT_TOKEN -t discord-bot-paul . && heroku container:login && heroku container:push --app discord-bot-paul discord-bot-paul && heroku container:release --app discord-bot-paul discord-bot-paul'
