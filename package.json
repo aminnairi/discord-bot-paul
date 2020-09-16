@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "paul",
+    "name": "discord-bot-paul",
     "version": "0.1.0",
     "license": "MIT",
     "scripts": {
