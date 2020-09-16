@@ -23,10 +23,10 @@ jobs:
               run: cp .env.example .env
 
             - name: Setup the Heroku API key
-              run: sed -i 's/HEROKU_API_KEY=/HEROKU_API_KEY=${{ secrets.HEROKU_API_KEY }}/g'
+              run: sed -i 's/HEROKU_API_KEY=/HEROKU_API_KEY=${{ secrets.HEROKU_API_KEY }}/g' .env
 
             - name: Setup the Discord bot token
-              run: sed -i 's/DISCORD_BOT_TOKEN=/DISCORD_BOT_TOKEN=${{ secrets.DISCORD_BOT_TOKEN }}/g'
+              run: sed -i 's/DISCORD_BOT_TOKEN=/DISCORD_BOT_TOKEN=${{ secrets.DISCORD_BOT_TOKEN }}/g' .env
 
             - name: Deploy the bot to Heroku
               run: make deploy
