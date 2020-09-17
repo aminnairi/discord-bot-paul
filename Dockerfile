@@ -4,7 +4,7 @@ ARG DISCORD_BOT_TOKEN
 
 COPY ./package.json .
 
-RUN yarn
+RUN yarn install --production
 
 COPY . .
 
