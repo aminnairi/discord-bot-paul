@@ -8,8 +8,8 @@
 "use strict";
 
 import Discord from "discord.js";
-import {getQuestion, getAnswers} from "./poll.mjs";
-import {createEmbed} from "./embed.mjs";
+import {getQuestion, getAnswers} from "./libraries/poll.mjs";
+import {createEmbed} from "./utilities/embed.mjs";
 
 const client = new Discord.Client();
 

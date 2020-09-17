@@ -8,6 +8,18 @@
 "use strict";
 
 export function getQuestion(string) {
+    if (arguments.length !== 1) {
+        throw new Error("Expected exactly one argument.");
+    }
+
+    if (typeof string !== "string") {
+        throw new TypeError("Expected first argument to be a string.");
+    }
+
+    if (string.length === 0) {
+        throw new Error("Expected first argument to be a non-empty string.");
+    }
+
     const parts = string.split(" ");
     const length = parts.length;
 
@@ -38,6 +50,18 @@ export function getQuestion(string) {
 }
 
 export function getAnswers(string) {
+    if (arguments.length !== 1) {
+        throw new Error("Expected exactly one argument.");
+    }
+
+    if (typeof string !== "string") {
+        throw new TypeError("Expected first argument to be a string.");
+    }
+
+    if (string.length === 0) {
+        throw new Error("Expected first argument to be a non-empty string.");
+    }
+
     const parts = string.split(" ");
     const length = parts.length;
     const answers = [];
@@ -65,5 +89,5 @@ export function getAnswers(string) {
         }
     }
 
-    return answers;
+    return answers.map(answer => answer.trim());
 };

@@ -8,9 +8,29 @@
 import Discord from "discord.js";
 
 export function createEmbed(title, description) {
+    if (arguments.length !== 2) {
+        throw new Error("Expected exactly two arguments.");
+    }
+
+    if (typeof title !== "string") {
+        throw new TypeError("Expected first argument to be a string.");
+    }
+
+    if (title.length === 0) {
+        throw new Error("Expected first argument to be a non-empty string.");
+    }
+
+    if (typeof description !== "string") {
+        throw new TypeError("Expected second argument to be a string.");
+    }
+
+    if (description.length === 0) {
+        throw new Error("Expected second argument to be a non-empty string.");
+    }
+
     return new Discord
         .MessageEmbed()
         .setTitle(title)
         .setDescription(description)
-        .setColor('#0099ff');
+        .setColor("#0099ff");
 }
