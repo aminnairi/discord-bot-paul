@@ -9,7 +9,7 @@
 
 import Discord from "discord.js";
 import {getQuestion, getAnswers} from "./libraries/poll.mjs";
-import {createEmbed} from "./utilities/embed.mjs";
+import {createEmbed} from "./libraries/embed.mjs";
 
 const client = new Discord.Client();
 
