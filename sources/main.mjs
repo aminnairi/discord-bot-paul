@@ -10,6 +10,7 @@
 import Discord from "discord.js";
 import {getQuestion, getAnswers} from "./libraries/poll.mjs";
 import {createEmbed} from "./libraries/embed.mjs";
+import {isHelpCommand, isVersionCommand, isPollCommand} from "./libraries/command.mjs";
 
 const client = new Discord.Client();
 
@@ -18,29 +19,25 @@ client.on("ready", () => {
 });
 
 client.on("message", message => {
-    const content = message.content;
+    const {content} = message;
 
-    if (content === "paul --version") {
+    if (isVersionCommand(content)) {
         return message
             .channel
             .send(createEmbed("Version", `v0.1.0\n\n[Official documentation](https://github.com/aminnairi/discord-bot-paul#readme)`));
     }
 
-    if (content === "paul --help") {
+    if (isHelpCommand(content)) {
         return message
             .channel
             .send(createEmbed("Help", "[Official documentation](https://github.com/aminnairi/discord-bot-paul#readme)"));
     }
 
-    if (!content.startsWith("paul")) {
+    if (!isPollCommand(content)) {
         return;
     }
 
     const question = getQuestion(content); 
-
-    if (question.length === 0) {
-        return;
-    }
 
     const emojis = [
         "🇦",
@@ -72,18 +69,8 @@ client.on("message", message => {
     ];
 
     const answers = getAnswers(content);
-
-    if (answers.length === 0) {
-        return;
-    }
-
     const answersWithEmoji = answers.slice(0, 26).map((answer, index) => `${emojis[index]} ${answer}`);
-
-    const embed = new Discord
-        .MessageEmbed()
-        .setTitle(question)
-        .setDescription(answersWithEmoji.join("\n") + "\n\n[Official documentation](https://github.com/aminnairi/discord-bot-paul#readme)")
-        .setColor('#0099ff');
+    const embed = createEmbed(question, answersWithEmoji.join("\n") + "\n\n[Official documentation](https://github.com/aminnairi/discord-bot-paul#readme)");
 
     message.channel.send(embed).then(messageSent => {
         answers.forEach((_, index) => {
