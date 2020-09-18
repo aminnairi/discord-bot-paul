@@ -24,7 +24,7 @@ client.on("message", message => {
     if (isVersionCommand(content)) {
         return message
             .channel
-            .send(createEmbed("Version", `v0.1.0\n\n[Official documentation](https://github.com/aminnairi/discord-bot-paul#readme)`));
+            .send(createEmbed("Version", `v0.2.0\n\n[Official documentation](https://github.com/aminnairi/discord-bot-paul#readme)`));
     }
 
     if (isHelpCommand(content)) {
